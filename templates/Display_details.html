@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display_details</title>
+
+<style>
+    a{
+        font-size: 20px;
+        color:whitesmoke;
+        background-color: blue;
+        text-decoration: none;
+        
+    }
+</style>
+
+
+
+</head>
+<body>
+    <center>
+        <h1>display_details</h1>
+        <table border="3px">
+            <tr><th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            {% for i in Details %}
+                <tr>
+                    <td>{{i.Id}}</td>
+                    <td>{{i.Name}}</td>
+                    <td>{{i.Age}}</td>
+                </tr>
+            {% endfor %}
+        </table><br>
+        <button style="background-color: blue;"><a href="http://127.0.0.1:8000/Curd_Of_Details/1">Do some Curd operation</a></button><br><br>
+        <button style="background-color: blue;"><a href="http://127.0.0.1:8000/Show_Database/">Show_Admin_Database</a></button>
+    </center>
+</body>
+</html>
